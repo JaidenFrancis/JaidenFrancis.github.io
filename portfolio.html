@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Jaiden's Portfolio</title>
+        <title>Jaiden's Cute Little Website</title>
         <style type="text/css">
             body {
                 background: rgb(255, 187, 210);
                 color: rgb(175, 20, 72);
                 padding: 10px;
-                font-family: calibri;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
             header {
                 font-size: 1.5em;
@@ -29,7 +29,7 @@
             h1 {
                 display: flex;
                 align-items: center;
-                color: rgb(175, 20, 72);
+                color: rgb(255, 255, 255);
                 flex: 1;
                 margin: 0;
             }
@@ -53,22 +53,47 @@
             .content {
                 flex: 1;
                 padding: 15px;
+                         /* portfolio styles */
+         .content h1 {
+             color: black;
+         }
+
+         #portfolio {
+             list-style-type: none;
+             padding-left: 0;
+         }
+
+         #portfolio li {
+             background: rgb(175, 20, 72);
+             padding: 10px;
+             border-radius: 10px;
+             margin-bottom: 10px;
+         }
+
+         #portfolio li:hover {
+             background: #eee;
+         }
+
+         #portfolio a {
+             text-decoration: none;
+             color: #454545;
+         }
             }
-        </style>
+        </style>     
     </head>
 
     <body>
       <div id="all-contents">
         <nav>
-            <h1>Jaiden's Little Website</h1>
+            <h1>Jaiden's Cute Little Website</h1>
             <ul id="nav-ul">
-                <li class="nav-li">
-                <a class="nav-a" href="index.html">Home</a>
-              </li>
-              <li class="nav-li">
-                <a class="nav-a" href="portfolio.html">Portfolio</a>
-              </li>
-          </ul>
+               <li class="nav-li">
+               <a class="nav-a" href="index.html">Home</a>
+             </li>
+             <li class="nav-li">
+               <a class="nav-a" href="portfolio.html">Portfolio</a>
+             </li>
+         </ul>
         </nav>
         <main>
             <div class="content">
@@ -80,7 +105,6 @@
                 </ul>
             </div>
         </main>
-
       </div>
     </body>
 </html>
