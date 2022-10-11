@@ -28,7 +28,7 @@
 
     ////////////////////////////////////////////////////////////////////////
     // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
-    createPlatform(200, 580)
+    createPlatform(350, 580)
     createPlatform(200, 300)
     /*
      * ground : here, we create a floor. Given the width of of the platform
