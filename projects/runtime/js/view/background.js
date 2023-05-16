@@ -95,6 +95,7 @@ var background = function (window) {
             // TODO 4: Part 2 - Parallax
             for (var i = 0; i < buildings.length; i++) {
                 var eachElement = buildings[i];
+
               
                 // code to do something with each element
               }
