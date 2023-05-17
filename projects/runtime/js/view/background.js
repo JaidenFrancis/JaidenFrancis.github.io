@@ -96,6 +96,16 @@ var background = function (window) {
             for (var i = 0; i < buildings.length; i++) {
                 var eachElement = buildings[i];
 
+                buildings.x = buildings.x + -1;
+
+                    if (buildings.x < -200) {
+                        buildings.x = canvasWidth;
+              
+                // code to do something with each element
+              }
+            
+            
+
               
                 // code to do something with each element
               }
