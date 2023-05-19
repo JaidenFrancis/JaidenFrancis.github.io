@@ -34,8 +34,22 @@ var runLevels = function (window) {
       obstacleImage.y = -25; 
     
     }
+      var enemy = game.createGameItem("enemy", 25);
+      var redSquare = draw.rect(50, 50, "red");
+      redSquare.x = -25;
+      redSquare.y = -25;
+      enemy.addChild(redSquare);
+      enemy.x = 400;
+      enemy.y = groundY - 50;
+      
+      game.addGameItem(enemy);
 
-    
+      enemy.velocityX = -3;
+      enemy.rotationalVelocity = 3;
+      
+      enemy.onPlayerCollision = function () {
+        game.changeIntegrity(-10)
+      };
     
     function startLevel() {
       // TODO 13 goes below here
