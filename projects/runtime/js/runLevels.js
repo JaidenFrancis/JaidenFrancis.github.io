@@ -38,7 +38,7 @@ var runLevels = function (window) {
       redSquare.x = -25;
       redSquare.y = -25;
       enemy.addChild(redSquare);
-      enemy.x = 400;
+      enemy.x = 800;
       enemy.y = groundY - 50;
       
       game.addGameItem(enemy);
@@ -68,7 +68,7 @@ var runLevels = function (window) {
       enemy.velocityX = -4;
       enemy.rotationalVelocity = 5;
 
-      
+      createReward()
 
     
     function startLevel() {
