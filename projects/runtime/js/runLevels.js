@@ -32,7 +32,6 @@ var runLevels = function (window) {
       sawBladeHitZone.addChild(obstacleImage);
       obstacleImage.x = -25;
       obstacleImage.y = -25; 
-    
     }
       var enemy = game.createGameItem("enemy", 25);
       var redSquare = draw.rect(50, 50, "red");
@@ -50,6 +49,27 @@ var runLevels = function (window) {
       enemy.onPlayerCollision = function () {
         game.changeIntegrity(-10)
       };
+      
+      enemy.onProjectileCollision = function (){
+        game.increaseScore(100);
+        enemy.fadeOut();
+      }
+      
+      var enemy = game.createGameItem("enemy", 25);
+      var redSquare = draw.rect(50, 50, "red");
+      redSquare.x = -25;
+      redSquare.y = -25;
+      enemy.addChild(redSquare);
+      
+      enemy.x = 800;
+      enemy.y = groundY - 50;
+      game.addGameItem(enemy);
+
+      enemy.velocityX = -4;
+      enemy.rotationalVelocity = 5;
+
+      
+
     
     function startLevel() {
       // TODO 13 goes below here
