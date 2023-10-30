@@ -6,6 +6,7 @@ function runProgram(){
   ////////////////////////////////////////////////////////////////////////////////
   //////////////////////////// SETUP /////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////
+    $(document).on('keydown', handleKeyDown);
 
   // Constant Variables
   var FRAME_RATE = 60;
@@ -13,10 +14,11 @@ function runProgram(){
   
   // Game Item Objects
   var KEY = {
+    ENTER: 13,
     LEFT: 37,
     UP: 38,
     RIGHT: 39,
-    DOWN: 40,  
+    DOWN: 40,
   };
 
   var walker1 = {
@@ -35,7 +37,35 @@ function runProgram(){
   ////////////////////////////////////////////////////////////////////////////////
   ///////////////////////// CORE LOGIC ///////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////
+  function handleKeyDown(event) {
+    if (event.which === KEY.ENTER) {
+      console.log("ENTER pressed");
+    }
 
+  }
+  function handleKeyDown(event) {
+    if (event.which === KEY.ENTER) {
+      console.log("LEFT pressed");
+    }
+  
+  }
+  function handleKeyDown(event) {
+    if (event.which === KEY.ENTER) {
+      console.log("RIGHT pressed");
+    }
+  }
+
+  function handleKeyDown(event) {
+    if (event.which === KEY.ENTER) {
+      console.log("UP pressed");
+    }
+  }
+
+  function handleKeyDown(event) {
+    if (event.which === KEY.ENTER) {
+      console.log("DOWN pressed");
+    }
+  }
   /* 
   On each "tick" of the timer, a new frame is dynamically drawn using JavaScript
   by calling this function and executing the code inside.
